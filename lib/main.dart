@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title : "Tasks App",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData( primarySwatch: Colors.blue),
       home: Scaffold(
         body: Center(
           child: Text('Hello World!'),
