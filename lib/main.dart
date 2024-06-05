@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:tasks/pages/home_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,11 +16,7 @@ class MainApp extends StatelessWidget {
       title : "Tasks App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData( primarySwatch: Colors.blue),
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
